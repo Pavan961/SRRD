@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/home_menu"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/divine_menu"
+            android:icon="@drawable/ic_divine"
+            android:title="Divine" />
+        <item
+            android:id="@+id/quiz_menu"
+            android:icon="@drawable/ic_quiz"
+            android:title="Quiz" />
+    </group>
+
+    <item android:title="Personal">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/settings_menu"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/share_menu"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/logout_menu"
+                android:icon="@drawable/ic_logout"
+                android:title="Log out" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

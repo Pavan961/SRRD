@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.srrd">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.srrd.TicketBooking.TicketBookingActivity"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity"/>
+        <activity android:name="com.example.srrd.Testimonials.TestimonialsActivity"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity"
+            />
+        <activity android:name="com.example.srrd.Prayers.PrayersActivity"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity"/>
+        <activity android:name="com.example.srrd.Gallery.GalleryActivity"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity"/>
+        <activity
+            android:name="com.example.srrd.HistoryTimeline.HistoryTimelineActivity"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity" />
+        <activity
+            android:name="com.example.srrd.Donation.DonationActivity"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity" />
+        <activity
+            android:name="com.example.srrd.TemplePlan.TemplePlanActivity"
+            android:label="@string/title_temple_plan"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity" />
+        <activity
+            android:name="com.example.srrd.Map.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity" />
+        <activity
+            android:name="com.example.srrd.Home.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:parentActivityName="com.example.srrd.Home.HomeActivity" />
+        <activity android:name="com.example.srrd.Dashboard.DashboardActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name="com.example.srrd.SignUp.SignUpActivity$ProfileActivity" />
+        <activity android:name="com.example.srrd.SignUp.SignUpActivity" />
+        <activity android:name="com.example.srrd.SignIn.SignInActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

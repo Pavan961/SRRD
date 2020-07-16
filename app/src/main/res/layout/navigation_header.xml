@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/trending_background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/naviationUserProfileImage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:contentDescription="@string/app_name"
+        app:border="true"
+        app:border_color="#EEEEEE"
+        app:border_width="4dp"
+        android:src="@drawable/user_dp" />
+
+    <TextView
+        android:id="@+id/nav_username_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pavan Kumar Pacharla"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/nav_userEmail_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.ssrd.org"
+        android:textSize="14sp" />
+</LinearLayout>
